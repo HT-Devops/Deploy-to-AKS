@@ -22,7 +22,7 @@ stages:
           containerRegistry: 'testdockerecr_svc_connection'
           repository: '$(imagerepo)'
           command: 'buildAndPush'
-          Dockerfile: '$(Build.SourceDirectory)/app/Dockerfile'
+          Dockerfile: '**/app/Dockerfile'
           addPipelineData: false
           addBaseImageData: false
       - task: PublishPipelineArtifact@1
