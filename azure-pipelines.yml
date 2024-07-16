@@ -6,7 +6,7 @@ resources:
 
 variables:
   imagerepo: testdockrepo
-  tag: '$(Build.BuildID)'
+  tag: 'Latest'
 
 stages:
 - stage: Build
