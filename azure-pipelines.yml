@@ -27,7 +27,7 @@ stages:
           addBaseImageData: false
       - task: PublishPipelineArtifact@1
         inputs:
-          targetPath: '$(Pipeline.Workspace)/s/kubernates/'
+          targetPath: '$(Pipeline.Workspace)/s/kubernetes/'
           artifact: 'manifests'
           publishLocation: 'pipeline'
 
