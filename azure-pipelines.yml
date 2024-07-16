@@ -23,7 +23,6 @@ stages:
           repository: '$(imagerepo)'
           command: 'buildAndPush'
           Dockerfile: '$(Build.SourceDirectory)/app/Dockerfile'
-          buildContext: 
           addPipelineData: false
           addBaseImageData: false
       - task: PublishPipelineArtifact@1
